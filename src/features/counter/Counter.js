@@ -51,12 +51,12 @@ export function Counter() {
         </button>
         <button
           className={styles.asyncButton}
-          onClick={() => dispatch(incrementAsync(incrementValue))}
+          onClick={() => dispatch(incrementAsync({ amount: incrementValue, status: false }))}
         >
           Add Async
         </button>
         <button
-          className={styles.button}
+          className=""
           onClick={() => dispatch(incrementIfOdd(incrementValue))}
         >
           Add If Odd
