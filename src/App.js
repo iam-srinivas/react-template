@@ -2,13 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
-
+import Typography from '@mui/material/Typography';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
+        <Typography variant="h3" component="h1" gutterBottom>
+          h1. Heading
+        </Typography>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
